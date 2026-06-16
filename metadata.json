@@ -1,0 +1,6 @@
+{
+  "name": "GitHub README Generator",
+  "description": "An interactive, beautiful Markdown README builder for personal GitHub profiles and repositories, with live previews, badge presets, and stats integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

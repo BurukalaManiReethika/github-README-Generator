@@ -1,0 +1,110 @@
+import { TechItem, ProfileData, RepoData } from './types';
+
+export const TECH_ITEMS: TechItem[] = [
+  // --- Languages ---
+  { id: 'typescript', name: 'TypeScript', category: 'languages', badgeLabel: 'TypeScript', badgeColor: '3178C6', badgeLogo: 'typescript' },
+  { id: 'javascript', name: 'JavaScript', category: 'languages', badgeLabel: 'JavaScript', badgeColor: 'F7DF1E', badgeLogo: 'javascript' },
+  { id: 'python', name: 'Python', category: 'languages', badgeLabel: 'Python', badgeColor: '3776AB', badgeLogo: 'python' },
+  { id: 'rust', name: 'Rust', category: 'languages', badgeLabel: 'Rust', badgeColor: '000000', badgeLogo: 'rust' },
+  { id: 'go', name: 'Go', category: 'languages', badgeLabel: 'Go', badgeColor: '00ADD8', badgeLogo: 'go' },
+  { id: 'cpp', name: 'C++', category: 'languages', badgeLabel: 'C%2B%2B', badgeColor: '00599C', badgeLogo: 'cplusplus' },
+  { id: 'kotlin', name: 'Kotlin', category: 'languages', badgeLabel: 'Kotlin', badgeColor: '7F52FF', badgeLogo: 'kotlin' },
+  { id: 'ruby', name: 'Ruby', category: 'languages', badgeLabel: 'Ruby', badgeColor: 'CC342D', badgeLogo: 'ruby' },
+  { id: 'php', name: 'PHP', category: 'languages', badgeLabel: 'PHP', badgeColor: '777BB4', badgeLogo: 'php' },
+  { id: 'java', name: 'Java', category: 'languages', badgeLabel: 'Java', badgeColor: 'ED8B00', badgeLogo: 'openjdk' },
+
+  // --- Frontend ---
+  { id: 'react', name: 'React', category: 'frontend', badgeLabel: 'React', badgeColor: '20232A', badgeLogo: 'react' },
+  { id: 'nextjs', name: 'Next.js', category: 'frontend', badgeLabel: 'Next.js', badgeColor: '000000', badgeLogo: 'next.js' },
+  { id: 'vue', name: 'Vue.js', category: 'frontend', badgeLabel: 'Vue.js', badgeColor: '35495E', badgeLogo: 'vuedotjs' },
+  { id: 'angular', name: 'Angular', category: 'frontend', badgeLabel: 'Angular', badgeColor: 'DD0031', badgeLogo: 'angular' },
+  { id: 'svelte', name: 'Svelte', category: 'frontend', badgeLabel: 'Svelte', badgeColor: 'FF3E00', badgeLogo: 'svelte' },
+  { id: 'tailwind', name: 'Tailwind CSS', category: 'frontend', badgeLabel: 'Tailwind_CSS', badgeColor: '38B2AC', badgeLogo: 'tailwindcss' },
+  { id: 'sass', name: 'Sass', category: 'frontend', badgeLabel: 'Sass', badgeColor: 'CC6699', badgeLogo: 'sass' },
+  { id: 'vite', name: 'Vite', category: 'frontend', badgeLabel: 'Vite', badgeColor: '646CFF', badgeLogo: 'vite' },
+  { id: 'css3', name: 'CSS3', category: 'frontend', badgeLabel: 'CSS3', badgeColor: '1572B6', badgeLogo: 'css3' },
+  { id: 'html5', name: 'HTML5', category: 'frontend', badgeLabel: 'HTML5', badgeColor: 'E34F26', badgeLogo: 'html5' },
+
+  // --- Backend ---
+  { id: 'nodejs', name: 'Node.js', category: 'backend', badgeLabel: 'Node.js', badgeColor: '339933', badgeLogo: 'nodedotjs' },
+  { id: 'express', name: 'Express', category: 'backend', badgeLabel: 'Express', badgeColor: '000000', badgeLogo: 'express' },
+  { id: 'nestjs', name: 'NestJS', category: 'backend', badgeLabel: 'NestJS', badgeColor: 'E0234E', badgeLogo: 'nestjs' },
+  { id: 'django', name: 'Django', category: 'backend', badgeLabel: 'Django', badgeColor: '092E20', badgeLogo: 'django' },
+  { id: 'fastapi', name: 'FastAPI', category: 'backend', badgeLabel: 'FastAPI', badgeColor: '009688', badgeLogo: 'fastapi' },
+  { id: 'graphql', name: 'GraphQL', category: 'backend', badgeLabel: 'GraphQL', badgeColor: 'E10098', badgeLogo: 'graphql' },
+  { id: 'springboot', name: 'Spring Boot', category: 'backend', badgeLabel: 'Spring_Boot', badgeColor: '6DB33F', badgeLogo: 'springboot' },
+
+  // --- Databases & Cloud ---
+  { id: 'postgresql', name: 'PostgreSQL', category: 'database_cloud', badgeLabel: 'PostgreSQL', badgeColor: '316192', badgeLogo: 'postgresql' },
+  { id: 'mongodb', name: 'MongoDB', category: 'database_cloud', badgeLabel: 'MongoDB', badgeColor: '47A248', badgeLogo: 'mongodb' },
+  { id: 'mysql', name: 'MySQL', category: 'database_cloud', badgeLabel: 'MySQL', badgeColor: '4479A1', badgeLogo: 'mysql' },
+  { id: 'redis', name: 'Redis', category: 'database_cloud', badgeLabel: 'Redis', badgeColor: 'DC382D', badgeLogo: 'redis' },
+  { id: 'aws', name: 'AWS', category: 'database_cloud', badgeLabel: 'AWS', badgeColor: '232F3E', badgeLogo: 'amazon-aws' },
+  { id: 'gcp', name: 'Google Cloud', category: 'database_cloud', badgeLabel: 'Google_Cloud', badgeColor: '4285F4', badgeLogo: 'googlecloud' },
+  { id: 'firebase', name: 'Firebase', category: 'database_cloud', badgeLabel: 'Firebase', badgeColor: 'FFCA28', badgeLogo: 'firebase' },
+  { id: 'supabase', name: 'Supabase', category: 'database_cloud', badgeLabel: 'Supabase', badgeColor: '3ECF8E', badgeLogo: 'supabase' },
+  { id: 'docker', name: 'Docker', category: 'database_cloud', badgeLabel: 'Docker', badgeColor: '2496ED', badgeLogo: 'docker' },
+  { id: 'vercel', name: 'Vercel', category: 'database_cloud', badgeLabel: 'Vercel', badgeColor: '000000', badgeLogo: 'vercel' },
+
+  // --- Tools & Others ---
+  { id: 'git', name: 'Git', category: 'tools', badgeLabel: 'Git', badgeColor: 'F05032', badgeLogo: 'git' },
+  { id: 'github-actions', name: 'GitHub Actions', category: 'tools', badgeLabel: 'GitHub_Actions', badgeColor: '2088FF', badgeLogo: 'githubactions' },
+  { id: 'figma', name: 'Figma', category: 'tools', badgeLabel: 'Figma', badgeColor: 'F24E1E', badgeLogo: 'figma' },
+  { id: 'vscode', name: 'VS Code', category: 'tools', badgeLabel: 'VS_Code', badgeColor: '007ACC', badgeLogo: 'visualstudiocode' },
+  { id: 'postman', name: 'Postman', category: 'tools', badgeLabel: 'Postman', badgeColor: 'FF6C37', badgeLogo: 'postman' },
+  { id: 'jest', name: 'Jest', category: 'tools', badgeLabel: 'Jest', badgeColor: 'C21325', badgeLogo: 'jest' },
+];
+
+export const INITIAL_PROFILE: ProfileData = {
+  name: 'Alex Developer',
+  title: 'Full-Stack Software Engineer',
+  subtitle: 'Building elegant solutions to complex real-world challenges.',
+  pronouns: 'he/him',
+  githubUsername: 'alexdev',
+  linkedinUsername: 'alex-developer',
+  twitterUsername: 'alexcodes',
+  portfolioUrl: 'https://alexdev.me',
+  devtoUsername: 'alexdev',
+  mediumUsername: 'alex-developer',
+  emailAddress: 'alex@example.com',
+  workingOn: 'Next-generation visual builders & React performance tools',
+  learning: 'Rust, Systems Programming and WebAssembly (Wasm)',
+  collaboratingOn: 'Open source engineering tools and UI systems',
+  askMeAbout: 'TypeScript, Tailwind CSS, System Architecture, and React Hooks',
+  funFact: 'I drink 4 cups of coffee a day and code better at 2 AM!',
+  techs: ['typescript', 'javascript', 'react', 'nextjs', 'tailwind', 'nodejs', 'postgresql', 'docker'],
+  showStats: true,
+  showLangs: true,
+  showStreak: true,
+  statsTheme: 'dark',
+  visitorsBadge: true,
+  visitorsBadgeColor: '3178C6',
+  quoteCard: true,
+  quoteTheme: 'dark',
+};
+
+export const INITIAL_REPO: RepoData = {
+  projectName: 'FastDraft',
+  tagline: 'An blazing fast, localized client-side documentation booster for modern projects.',
+  githubUsername: 'alexdev',
+  repoName: 'fast-draft',
+  license: 'MIT',
+  version: '1.2.0',
+  nodeVersion: '>=18.0.0',
+  buildStatus: true,
+  prsWelcome: true,
+  features: [
+    '✨ Local first & zero latency configuration',
+    '⚡ Lightweight client bundles with tailwind styles',
+    '🛡️ Static security badges automatically preloaded',
+    '🎨 Custom high-contrast theme components supporting fluid layouts'
+  ],
+  prerequisites: 'Node.js LTS (v18 or higher) and npm / yarn / pnpm installed.',
+  installation: 'npm install -g fast-draft\n# or\nnpx fast-draft init',
+  usage: 'fast-draft build --config ./draft.config.json',
+  contributing: 'Pull requests are extremely welcome! Feel free to open an issue or submit a PR.',
+  authorName: 'Alex Developer',
+  authorEmail: 'alex@example.com',
+  demoUrl: 'https://fastdraft-demo.vercel.app',
+  technologies: ['typescript', 'react', 'vite', 'tailwind', 'github-actions'],
+};
