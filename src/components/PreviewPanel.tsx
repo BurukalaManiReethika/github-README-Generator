@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Eye, Code, Copy, Check, Download, Monitor, Sun, Moon, Sparkles, Terminal } from 'lucide-react';
+import { Eye, Code, Copy, Check, Download, Monitor, Sun, Moon, Terminal } from 'lucide-react';
 import { ProfileData, RepoData, TechItem } from '../types';
 import { generateProfileMarkdown, generateRepoMarkdown, findTechItem } from '../utils/markdownGenerator';
 

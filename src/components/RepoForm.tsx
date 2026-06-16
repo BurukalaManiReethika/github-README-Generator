@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Layers, Terminal, Sparkles, User, Link, Plus, Trash2 } from 'lucide-react';
+import { Layers, Terminal, Star, User, Link, Plus, Trash2 } from 'lucide-react';
 import { RepoData } from '../types';
 import TechSelector from './TechSelector';
 
@@ -121,7 +121,7 @@ export default function RepoForm({ data, onChange }: RepoFormProps) {
       <section className="space-y-4">
         <div className="flex items-center space-x-2 border-b border-slate-100 pb-2">
           <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-50 text-indigo-600">
-            <Sparkles className="h-4 w-4" />
+            <Star className="h-4 w-4" />
           </div>
           <h3 className="text-xs font-black uppercase tracking-wider text-slate-800">02. Highlight Features</h3>
         </div>

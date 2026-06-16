@@ -5,7 +5,7 @@ import RepoForm from './components/RepoForm';
 import PreviewPanel from './components/PreviewPanel';
 import { EditorMode, ProfileData, RepoData } from './types';
 import { INITIAL_PROFILE, INITIAL_REPO } from './data';
-import { Sparkles, Sliders, Heart } from 'lucide-react';
+import { Sliders, Heart } from 'lucide-react';
 
 export default function App() {
   const [mode, setMode] = useState<EditorMode>('profile');
@@ -38,8 +38,8 @@ export default function App() {
                     {mode === 'profile' ? 'Profile Customizer' : 'Repository Architect'}
                   </h2>
                 </div>
-                <span className="inline-flex items-center space-x-1 rounded-full bg-indigo-50 px-2.5 py-0.5 text-[10px] font-bold text-indigo-700">
-                  <Sparkles className="h-2.5 w-2.5 shrink-0" />
+                <span className="inline-flex items-center space-x-1.5 rounded-full bg-emerald-50 px-2.5 py-0.5 text-[10px] font-bold text-emerald-700">
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
                   <span>Auto-Sync Live</span>
                 </span>
               </div>
